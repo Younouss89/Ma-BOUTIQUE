@@ -1,0 +1,94 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #32a094;
+    color: #333;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: #1b15be;
+    color: white;
+    padding: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Section produits */
+  .produits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .produit {
+    background-color: rgb(15, 206, 82);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(95, 41, 222, 0.1);
+  }
+  
+  .produit img {
+    .produit img {
+      width: 100%;   /* Prend toute la largeur du conteneur */
+      height: 200px; /* Fixe la hauteur à 200px pour toutes les images */
+      object-fit: cover; /* Assure que l’image conserve son aspect sans être déformée */
+    }
+    
+  }
+  
+  .produit button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4912e0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Pied de page */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .produits-container {
+      padding: 1rem;
+      grid-template-columns: 1fr;
+    }
+  }
+  
